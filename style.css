@@ -1,0 +1,405 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap');
+:root {
+    --color-secondary: #f73739;
+    --color-primary: #f7373a;
+    --color-head: #080a0c;
+    --nav-bg: #030e1a;
+    --white: #FFF;
+    --ourbg-color: #ebfffe;
+    --fz14: 14px;
+    --fz16: 16px;
+    --fz18: 18px;
+    --fz20: 20px;
+    --fz22: 22px;
+    --fz24: 24px;
+    --fz26: 26px;
+    --fz28: 28px;
+    --fz30: 30px;
+    --fz32: 32px;
+    --fz34: 34px;
+    --fz36: 36px;
+    --fz38: 38px;
+    --fz40: 40px;
+    --fz42: 42px;
+    --fz44: 44px;
+    --fz46: 46px;
+    --fz50: 50px;
+    --fwmidum: 500;
+    --fwbold: 600;
+    --fwexbold: 700;
+    --fwbolder: 800;
+    --poppins: 'Poppins', sans-serif !important;
+}
+
+body {
+    font-family: 'Poppins', sans-serif !important;
+}
+
+a:hover {
+    text-decoration: none !important;
+}
+
+header .navbar-brand {
+    font-size: var(--fz30);
+    font-weight: var(--fwexbold);
+}
+
+.navbar-light .navbar-brand {
+    color: var(--color-primary) !important;
+}
+
+
+
+.navbar ul li a {
+    color: Var(--white) !important;
+    position: relative;
+}
+
+.navbar ul li {
+    margin-right: 18px;
+}
+
+.navbar ul li a::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    transition: .4s ease-in-out;
+    background-color: var(--white);
+}
+
+.navbar ul li:hover a {
+    color: var(--color-primary) !important;
+    transition: .4s ease-in-out;
+}
+
+.navbar ul li:hover a::before {
+    opacity: 1;
+    width: 100%;
+    transition: .4s ease-in-out;
+}
+
+.navbar-default {
+    transition: 500ms ease;
+    background: transparent;
+    height: 90px;
+}
+  .navbar-default.scrolled{
+    background: var(--nav-bg);
+
+    box-shadow: 0px 0px 6px rgba(207, 207, 207, 0.9);
+    height: 90px;
+  }
+
+.banner {
+    background-image: url('banner1.png');
+    background-size: cover;
+    background-position: left top;
+    position: relative;
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    background-color: var(--nav-bg);
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0.4;
+}
+
+.banner h1 {
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--white);
+    font-style: italic;
+    letter-spacing: 0.02em;
+}
+
+.banner a {
+    padding: 10px 30px;
+    background-color: var(--color-primary);
+    color: var(--white);
+    border: 1px solid var(--color-primary);
+}
+
+.banner a:hover {
+    color: var(--color-secondary);
+    border: 1px solid var(--white);
+    background-color: transparent;
+    transition: .4s ease-in-out;
+}
+
+.club-sec {
+    padding: 80px 0px;
+}
+
+.club-heading h1 {
+    padding-right: 118px;
+    font-size: 60px;
+    font-weight: 900;
+    position: relative;
+    color: var(--color-head);
+    font-family: var(--poppins);
+}
+
+.club-heading h1::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 5px;
+    top: -2%;
+    left: 0;
+    background-color: var(--color-primary);
+}
+
+.club-sec .club-para {
+    position: relative;
+}
+
+.club-sec .club-para:before {
+    content: "";
+    position: absolute;
+    width: 1px;
+    height: calc(100% + 2%);
+    background-color: black;
+    left: -50px;
+    top: 2px;
+    bottom: 0;
+}
+
+.club-para a {
+    padding: 10px 30px;
+    background: var(--color-primary);
+    color: #FFF;
+    border:1px solid var(--color-primary)
+}
+
+
+.club-para a:hover{
+    background-color:transparent;
+    border:1px solid var(--nav-bg);
+    color:var(--nav-bg);
+    transition: .4s ease-in-out;
+}
+
+.club-para {
+    padding-left: 30px;
+}
+
+.testimonials-sec .card {
+    margin-top: 50px;
+}
+
+.club-para p {
+    font-size: var(--fz18);
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.club-btn a {
+    padding: 10px 30px;
+    background-color: var(--color-primary);
+    border: 1px solid var(--color-primary);
+    color: var(--white);
+}
+
+.club-btn a:hover {
+    background: transparent;
+    border: 1px solid var(--color-primary);
+    color: var(--color-head);
+    transition: .2s ease;
+}
+
+.our-sec {
+    padding: 80px 0px;
+    background-color: var(--ourbg-color);
+}
+
+.our-content .our-img {
+    position: relative;
+    display: block;
+    overflow: hidden;
+}
+
+.our-content .our-img img:hover {
+    transform: scale(1.05);
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.our-btn a {
+    padding: 6px 26px;
+    border: 1px solid var(--color-primary);
+    background-color: var(--color-primary);
+    color: var(--white);
+}
+
+.our-btn a:hover {
+    background-color: transparent;
+    color: var(--color-head);
+    transition: .4s ease-in-out;
+}
+
+.our-head h1 {
+    position: relative;
+    font-size: 64px;
+    font-weight: 900;
+    color: var(--color-head);
+    font-family: var(--poppins);
+}
+
+.our-head h1::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 5px;
+    background-color: var(--color-primary);
+    top: -5%;
+    left: 0;
+}
+
+.our-content h1 {
+    font-size: var(--fz30);
+    font-weight: var(--fwexbold);
+}
+
+.our-content p {
+    font-size: var(--fz14);
+    color: var(--nav-bg);
+    letter-spacing: 00.02em;
+    font-family: var(--poppins);
+}
+
+.join-sec {
+    padding: 80px 0px;
+    background-color: var(--nav-bg);
+}
+
+.join-sec form input {
+    background-color: transparent;
+    border: none !important;
+    border-bottom: 1px solid var(--white) !important;
+    padding: 0px !important;
+    padding-bottom: 26px !important;
+    border-radius: 0px !important;
+}
+
+.join-sec ::placeholder {
+    color: var(--white) !important;
+}
+
+.join-sec form textarea {
+    background-color: transparent !important;
+    border: none !important;
+    border-bottom: 1px solid var(--white) !important;
+    border-radius: 0px !important;
+    padding: 0px !important;
+}
+
+.join-sec .form-control:focus {
+    background-color: transparent !important;
+    color: var(--white) !important;
+    box-shadow: none !important;
+}
+
+.join-content h1 {
+    font-size: 64px;
+    font-weight: 800;
+    letter-spacing: 0.02em;
+    position: relative;
+}
+
+.join-content h1::before {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 5px;
+    background-color: var(--color-primary);
+    top: -8%;
+    left: 0%;
+}
+
+.testimonials-sec {
+    padding: 80px 0px;
+    background-color: var(--ourbg-color);
+}
+
+.position-relative {
+    position: relative!important;
+    border-radius: 10px !important;
+    border: none !important;
+    padding: 0px 20px 20px 20px !important;
+}
+
+.card p {
+    color: var(--nav-bg);
+    font-size: var(--fz18);
+}
+
+.card span {
+    font-size: var(--fz28);
+}
+
+figure {
+    width: 80px;
+    position: absolute;
+    left: 45%;
+    top: -14%;
+}
+
+.card h4 {
+    font-size: var(--fz18);
+    letter-spacing: 0.02em;
+}
+
+.card h5 {
+    font-size: var(--fz14);
+}
+
+.copyright {
+    padding: 15px 0px;
+    background-color: var(--nav-bg);
+}
+
+.copyright ul li {
+    width: 40px;
+    height: 40px;
+    border: 1px solid var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.copyright ul li a {
+    color: var(--white);
+}
+
+.copyright ul li:hover a {
+    transform: rotate(360deg);
+    transition: .4s ease-in-out;
+}
+
+.testimonials-sec h1 {
+    font-size: var(--fz46);
+    font-weight: var(--fwexbold);
+}
+
+.send-btn a {
+    padding: 6px 40px;
+    background-color: var(--color-primary);
+    border:1px solid var(--color-primary);
+    color: var(--white);
+}
+.send-btn a:hover{
+    background-color: transparent;
+    border:1px solid var(--white);
+    transition: .4s ease-in-out;
+    color:var(--white);
+}

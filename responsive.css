@@ -1,0 +1,149 @@
+@media (max-width: 575.98px) { 
+
+    header .navbar-brand {
+        font-size: var(--fz22) !important;
+        margin-left: 5px !important;
+    }
+
+    .navbar-light .navbar-toggler {
+       
+        color: var(--color-primary)!important;
+    }
+
+    .navbar button:focus{
+        outline: none !important;
+    }
+    .banner a {
+        padding: 5px 20px;
+    }
+    .club-para {
+        padding-left: 0px !important;
+    }
+    
+    .our-content {
+        margin-top: 28px;
+    }
+    .mt-ms-2 {
+        margin-top: 2px !important;
+    }
+    .our-content h1{
+        font-size: var(--fz22);
+    }
+  
+    form {
+        margin-top: 30px;
+    }
+
+   .banner h1{
+    font-size: var(--fz38) !important;
+   }
+
+   .club-heading h1 {
+    padding-right: 0px !important; 
+    font-size: var(--fz38);
+   }
+
+   .our-head h1 {
+    font-size: var(--fz38) !important;
+
+}
+
+.club-para p {
+    font-size: var(--fz16);
+}
+
+.join-content h1 {
+    font-size: var(--fz38) !important;
+
+}
+.testimonials-sec h1 {
+    font-size: var(--fz38);
+   
+}
+
+figure {
+    left: 35%;
+    top: -9%;
+}
+
+.card p {
+    font-size: var(--fz16);
+}
+.copyright p{
+    text-align: center;
+}
+.footer-icon{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    margin-top:20px;
+}
+
+.navbar-nav.ml-auto {
+    background: var(--nav-bg);
+    padding: 5px;
+}
+ .navbar ul li{
+    border-bottom: 1px solid var(--white) !important;
+    margin: 0px !important;
+  }
+
+
+ }
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+ 
+    figure {
+        left: 41%;
+        top: -9%;
+    }
+
+}
+
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+
+    .club-heading h1 {
+        padding-right: 0px !important;
+       
+    }
+
+    .club-sec .club-para:before {
+        left: -10px;
+ }
+ .club-para p {
+    font-size: var(--fz16);
+}
+.our-head h1 {
+    position: relative;
+    font-size: var(--fz50);
+}
+.navbar-light .navbar-toggler {
+       
+    color: var(--color-primary)!important;
+}
+
+
+.join-content h1 {
+    font-size: 50px;
+}
+
+figure{
+    left: 41% !important;
+}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+
+    figure{
+        left: 43% !important;
+    }
+
+
+ }
+
+@media (min-width: 1200px) { 
+
+
+
+ }
